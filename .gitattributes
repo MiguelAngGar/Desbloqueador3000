@@ -1,0 +1,26 @@
+# Normaliza line endings en el repo a LF. Git convierte a CRLF al checkout
+# en Windows si core.autocrlf lo pide, pero el repo queda limpio.
+* text=auto eol=lf
+
+# Código fuente siempre LF.
+*.cpp  text eol=lf
+*.h    text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Scripts específicos por plataforma.
+*.sh   text eol=lf
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.rc   text eol=crlf
+
+# Binarios — no tocar.
+*.ico  binary
+*.png  binary
+*.icns binary
+*.jpg  binary
+*.pdf  binary

@@ -56,6 +56,16 @@ bool runProcess(const QString &program, const QStringList &args,
     return proc.waitForFinished(kProcessTimeoutMs) && proc.exitCode() == 0;
 }
 
+#ifdef Q_OS_WIN
+// PowerShell single-quoted string literal escape.
+QString psQuote(const QString &s)
+{
+    QString r = s;
+    r.replace('\'', QStringLiteral("''"));
+    return QStringLiteral("'%1'").arg(r);
+}
+#endif
+
 } // anonymous namespace
 
 namespace ExcelProcessor {
@@ -72,10 +82,14 @@ Result process(const QString &inputPath)
 
     // ── 1. Extraer .xlsx (es un ZIP) ──────────────────────────────────────
 #ifdef Q_OS_WIN
+    // Usamos .NET ZipFile directamente (no Expand-Archive) para evitar
+    // problemas con corchetes en nombres (p.ej. [Content_Types].xml).
+    const QString extractScript = QStringLiteral(
+        "Add-Type -AssemblyName System.IO.Compression.FileSystem; "
+        "[System.IO.Compression.ZipFile]::ExtractToDirectory(%1,%2)"
+    ).arg(psQuote(inputPath), psQuote(tempDir.path()));
     const bool extracted = runProcess("powershell", {
-        "-Command",
-        QString("Expand-Archive -Path '%1' -DestinationPath '%2' -Force")
-            .arg(inputPath, tempDir.path())
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", extractScript
     });
 #else
     const bool extracted = runProcess("unzip", {"-o", inputPath, "-d", tempDir.path()});
@@ -111,10 +125,17 @@ Result process(const QString &inputPath)
     QFile::remove(outPath);
 
 #ifdef Q_OS_WIN
+    // Compress-Archive de PowerShell 5.1 usa '\' como separador en el ZIP,
+    // violando la spec de ZIP → Excel rechaza el archivo y lo marca como
+    // dañado/protegido. Usamos .NET ZipFile::CreateFromDirectory que
+    // produce separadores '/' correctos.
+    const QString packScript = QStringLiteral(
+        "Add-Type -AssemblyName System.IO.Compression.FileSystem; "
+        "[System.IO.Compression.ZipFile]::CreateFromDirectory(%1,%2,"
+        "[System.IO.Compression.CompressionLevel]::Optimal,$false)"
+    ).arg(psQuote(tempDir.path()), psQuote(outPath));
     const bool repacked = runProcess("powershell", {
-        "-Command",
-        QString("Compress-Archive -Path '%1\\*' -DestinationPath '%2' -Force")
-            .arg(tempDir.path(), outPath)
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", packScript
     });
 #else
     const bool repacked = runProcess("ditto", {"-c", "-k", "--norsrc", tempDir.path(), outPath});
