@@ -1,0 +1,6 @@
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/AppIconTarget.dir
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/Desbloqueador3000.dir
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/edit_cache.dir
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/rebuild_cache.dir
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/Desbloqueador3000_autogen_timestamp_deps.dir
+/Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/CMakeFiles/Desbloqueador3000_autogen.dir

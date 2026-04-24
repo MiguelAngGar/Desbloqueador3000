@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Desbloqueador3000_FILE /Users/miguelangelgarridogavilan/Documents/Claude/Projects/Desbloqueador3000/build-mac/Desbloqueador3000.app/Contents/MacOS/Desbloqueador3000)
+set(__QT_DEPLOY_TARGET_Desbloqueador3000_TYPE EXECUTABLE)

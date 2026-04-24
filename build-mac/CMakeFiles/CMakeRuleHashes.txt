@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+c47cb9eacf4ecb9f3b87036875f773cd AppIcon.icns
+e1974348f5dbd6acd2c922891123e0f9 CMakeFiles/AppIconTarget
+e1974348f5dbd6acd2c922891123e0f9 CMakeFiles/Desbloqueador3000_autogen
+17ac683cf44c5f59982c2734ccc42721 Desbloqueador3000_autogen/timestamp
