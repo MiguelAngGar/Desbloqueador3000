@@ -1,6 +1,11 @@
 # Build
 build/
+build-win/
+build-mac/
 cmake-build-*/
+
+# Dist
+dist/
 
 # macOS
 *.DS_Store
