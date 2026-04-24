@@ -75,9 +75,9 @@ cmake --build build-mac
 open build-mac/Desbloqueador3000.app
 ```
 
-🪟 Windows
+## 🪟 Windows
 
-## Requisitos
+### Requisitos
 
 - Qt 6 (MSVC 2022 64-bit)
 - Visual Studio Build Tools 2022
@@ -95,7 +95,7 @@ Durante la instalación selecciona:
 
 ---
 
-## ⚙️ Compilación en Windows
+### ⚙️ Compilación en Windows
 
 ```powershell
 git clone https://github.com/your-username/Desbloqueador3000.git
@@ -111,7 +111,7 @@ cmake --build build --config Release
 
 ---
 
-## ▶️ Ejecutar
+### ▶️ Ejecutar
 
 El ejecutable se genera en:
 
@@ -121,7 +121,7 @@ build\Release\Desbloqueador3000.exe
 
 ---
 
-## 📦 Crear versión portable (recomendado)
+### 📦 Crear versión portable (recomendado)
 
 Después de compilar:
 
