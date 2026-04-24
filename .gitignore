@@ -21,3 +21,7 @@ qrc_*
 .vscode/
 .idea/
 *.swp
+build/
+build-mac/
+build-win/
+dist/*.dmg
