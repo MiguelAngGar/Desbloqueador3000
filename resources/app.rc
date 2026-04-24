@@ -1,0 +1,3 @@
+// Windows resource script.
+// IDI_ICON1 es el ID que Windows Explorer busca para el icono del .exe.
+IDI_ICON1 ICON "AppIcon.ico"

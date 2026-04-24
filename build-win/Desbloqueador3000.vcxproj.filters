@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\build-win\Desbloqueador3000_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\DropZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\ResultPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\ExcelProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\src\SpinnerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\build-win\Desbloqueador3000_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\build-win\Desbloqueador3000_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\build-win\Desbloqueador3000_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\DropZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\ResultPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\ExcelProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\SpinnerWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\include\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\migue\Documents\ProyectosCPP\Desbloqueador3000\resources\app.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{384CE3B0-FD0C-3CF1-BA62-9545890FEB9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DFC0A16A-7247-3062-A334-75F6EA9002CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

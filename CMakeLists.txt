@@ -76,4 +76,8 @@ endif()
 # ── Windows ───────────────────────────────────────────────────────────────
 if(WIN32)
     set_target_properties(Desbloqueador3000 PROPERTIES WIN32_EXECUTABLE TRUE)
+
+    # Embebe AppIcon.ico en el .exe vía app.rc (IDI_ICON1).
+    set(APP_ICON_WIN "${CMAKE_SOURCE_DIR}/resources/app.rc")
+    target_sources(Desbloqueador3000 PRIVATE "${APP_ICON_WIN}")
 endif()

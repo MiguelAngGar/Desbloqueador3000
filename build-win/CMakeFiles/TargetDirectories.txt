@@ -1,0 +1,3 @@
+C:/Users/migue/Documents/ProyectosCPP/Desbloqueador3000/build-win/CMakeFiles/Desbloqueador3000.dir
+C:/Users/migue/Documents/ProyectosCPP/Desbloqueador3000/build-win/CMakeFiles/ALL_BUILD.dir
+C:/Users/migue/Documents/ProyectosCPP/Desbloqueador3000/build-win/CMakeFiles/ZERO_CHECK.dir
