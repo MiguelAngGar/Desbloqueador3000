@@ -1,0 +1,23 @@
+# Build
+build/
+cmake-build-*/
+
+# macOS
+*.DS_Store
+*.icns
+
+# Qt
+*.user
+moc_*
+ui_*
+qrc_*
+
+# Compiled
+*.o
+*.obj
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
